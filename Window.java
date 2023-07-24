@@ -109,6 +109,9 @@ public class Window {
 
             if (KeyListener.isKeyPressed(GLFW_KEY_SPACE)) {
                 fadeToBlack = true;
+                if (r + g + b == 0) {
+                    System.out.println("Screen is black!");
+                }
             }
 
             glfwSwapBuffers(glfwWindow);
